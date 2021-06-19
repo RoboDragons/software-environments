@@ -15,6 +15,9 @@ RUN apt update && apt install -y \
     vim \
     iputils-ping \
     net-tools \
-    dnsutils
+    dnsutils \
+    sudo
+
+RUN echo "default    ALL=(ALL)   NOPASSWD:    ALL" >> /etc/sudoers
 
 USER default
