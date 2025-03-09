@@ -17,7 +17,7 @@ RUN apt update && apt install -y \
     iputils-ping \
     net-tools \
     dnsutils \
-    # sudo
+    sudo
 
 RUN echo "default    ALL=(ALL)   NOPASSWD:    ALL" >> /etc/sudoers
 
